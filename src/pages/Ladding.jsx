@@ -8,12 +8,21 @@ export default function Ladding() {
             <Header>
                 Teste
             </Header>
-            <Section></Section>
-            <Section dark={true}></Section>
-            <Section></Section>
-            <Section dark={true}></Section>
-            <Section></Section>
-            <Section dark={true}></Section>
+            <Section>
+                [Inicio]
+            </Section>
+            <Section dark={true}>
+                [Nossos Serviços]
+            </Section>
+            <Section>
+                [Horário de Atendimento]
+            </Section>
+            <Section dark={true}>
+                [Feedbacks]
+            </Section>
+            <Section>
+                [Mais]
+            </Section>
         </div>
     )
 }

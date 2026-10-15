@@ -1,7 +1,10 @@
-export default function Section({ children, dark }) {
+export default function Section({ children, dark, id, className = "" }) {
     return (
-        <div className={`h-dvh ${dark ? "bg-teal-900" : ""}`}>
+        <section
+            id={id}
+            className={`min-h-screen relative flex flex-col justify-center ${dark ? "bg-teal-900 text-white" : "bg-white text-gray-800"} ${className}`}
+        >
             {children}
-        </div>
+        </section>
     );
 }
