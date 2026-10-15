@@ -1,10 +1,45 @@
-export default function Section({ children, dark, id, className = "" }) {
+import flor from "../assets/flor.png";
+
+export default function Section({ children, dark, id, flowers = 0, className = "" }) {
+    // Configuração dos presets de flores decorativas
+    // flowers = 1: top-left e bottom-right
+    // flowers = 2: top-left e top-right
+    const flowers_pos = {
+        1: [
+            { className: "top-0 left-0 -translate-x-1/4 -translate-y-1/4 rotate-12" },
+            { className: "bottom-0 right-0 translate-x-1/4 translate-y-1/4 -rotate-12" },
+        ],
+        2: [
+            { className: "top-0 left-0 -translate-x-1/4 -translate-y-1/4 rotate-12" },
+            { className: "top-0 right-0 translate-x-1/4 -translate-y-1/4 -rotate-45" },
+        ],
+    };
+
+    const currentFlowers = flowers_pos[flowers] || [];
+
     return (
         <section
             id={id}
-            className={`h-dvh relative flex flex-col justify-center ${dark ? "brand-color text-white" : "bg-white text-gray-800"} ${className}`}
+            className={`h-dvh relative flex flex-col justify-center overflow-hidden ${
+                dark ? "brand-color text-white" : "bg-white text-gray-800"
+            } ${className}`}
         >
-            {children}
+            {flowers !== 0 && (
+                <div className="absolute inset-0 w-full h-full pointer-events-none select-none z-0">
+                    {currentFlowers.map((pos, index) => (
+                        <img
+                            key={index}
+                            src={flor}
+                            alt=""
+                            aria-hidden="true"
+                            className={`absolute w-sm sm:w-md md:w-lg opacity-25 object-contain ${pos.className}`}
+                        />
+                    ))}
+                </div>
+            )}
+            <div className="relative z-10 w-full h-full flex flex-col justify-center">
+                {children}
+            </div>
         </section>
     );
 }

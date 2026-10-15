@@ -3,6 +3,9 @@ import Section from "../components/Section"
 import fundo from "../assets/fundo.png"
 import Button from "../components/Button"
 import ImgFundo from "../components/ImgFundo"
+import clock from "../assets/clock.png"
+import Table from "../components/Table.jsx"
+import ImgFundoDefault from "../assets/fundo.png"
 
 export default function Ladding() {
     return (
@@ -13,7 +16,7 @@ export default function Ladding() {
             <Section id="inicio">
                 <div className="flex h-full">
 
-                    <div className="flex flex-col align-top h-full w-1/2 p-10">
+                    <div className="flex flex-col align-top h-full w-full sm:w-1/2 p-10">
                         <p>Consultório de psicologia e psicoterapia</p>
 
                         <div className="m-auto gap-2">
@@ -26,7 +29,7 @@ export default function Ladding() {
                         </div>
 
                     </div>
-                    <div className="w-1/2 h-full">
+                    <div className="w-0 sm:w-1/2 h-full">
                         <ImgFundo src={fundo} />
                     </div>
                 </div>
@@ -40,12 +43,15 @@ export default function Ladding() {
                 </div>
             </Section>
 
-            <Section id="horarios">
+            <Section id="horarios" flowers={1}>
                 <div className="flex flex-col text-center justify-center h-full w-full">
-                    <h2>Horário de Atendimento.</h2>
-                    <p>Estamos disponíveis para agendamento de consultas e visitas.</p>
-                    <div className="flex max-w-200 w-full mx-auto backdrop:blur-2xl">
-                        aaaaaaaaa
+                    <h2 className="text-brand">Horário de Atendimento.</h2>
+                    <p className="text-brand">Estamos disponíveis para agendamento de consultas e visitas.</p>
+                    <hr className="my-4 border-brand w-1/10 m-auto"></hr>
+                    {/* Horários card */}
+                    <div className="flex border border-brand max-w-200 w-full mx-auto backdrop:blur-3xl bg-white/47 rounded-2xl gap-4 p-4">
+                        <img src={clock} className="w-0 sm:w-auto max-w-1/3 aspect-square"></img>
+                        <Table></Table>
                     </div>
                 </div>
             </Section>
