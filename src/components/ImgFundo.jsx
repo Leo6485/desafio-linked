@@ -1,29 +1,19 @@
-import fundoDefault from "../assets/fundo.png";
 import lineSvg from "../assets/line.svg";
+import fundo from "../assets/fundo.png"
 
-export default function ImgFundo({
-    src = fundoDefault,
-    alt = "Consultório de psicologia e psicoterapia",
-    className = "",
-    scale = 1,
-    ...props
-}) {
+export default function ImgFundo() {
     return (
-        <div className={`relative h-full w-full overflow-hidden ${className}`}>
+        <div className={`flex justify-end relative h-full w-full overflow-hidden`}>
             <img
-                src={src}
-                alt={alt}
+                src={fundo}
+                alt="Consultório de psicologia e psicoterapia"
                 className="h-full w-full object-cover"
-                {...props}
             />
             <img
                 src={lineSvg}
                 alt=""
                 aria-hidden="true"
-                className="absolute left-0 top-0 h-full pointer-events-none select-none origin-top-left"
-                style={{
-                    transform: scale !== 1 ? `scale(${scale})` : undefined,
-                }}
+                className="w-0 md:w-auto absolute left-0 top-0 h-full pointer-events-none select-none origin-top-left object-cover"
             />
         </div>
     );

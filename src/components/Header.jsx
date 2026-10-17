@@ -31,7 +31,7 @@ export default function Header({ children }) {
                     {links.map((link) => (
                         <a
                             key={link.href}
-                            className="hover:border-b border-brand -my-px text-brand transition-colors"
+                            className="hover:underline decoration-brand decorantion-2 text-brand transition"
                             href={link.href}
                         >
                             {link.label}

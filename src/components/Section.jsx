@@ -1,9 +1,6 @@
 import flor from "../assets/flor.png";
 
 export default function Section({ children, dark, id, flowers = 0, className = "" }) {
-    // Configuração dos presets de flores decorativas
-    // flowers = 1: top-left e bottom-right
-    // flowers = 2: top-left e top-right
     const flowers_pos = {
         1: [
             { className: "top-0 left-0 -translate-x-1/4 -translate-y-1/4 rotate-12" },
@@ -21,7 +18,7 @@ export default function Section({ children, dark, id, flowers = 0, className = "
         <section
             id={id}
             className={`h-dvh relative flex flex-col justify-center overflow-hidden ${
-                dark ? "brand-color text-white" : "bg-white text-gray-800"
+                dark ? "brand-color text-white" : "bg-white text-black"
             } ${className}`}
         >
             {flowers !== 0 && (

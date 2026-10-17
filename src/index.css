@@ -37,9 +37,19 @@ body {
   font-weight: 700;
 }
 
+p {
+  font-size: 1.25rem;
+}
+
 h2 {
-  font-size: 4rem; /* ou x-large / 1.75rem */
+  font-size: 2.25rem;
   line-height: 1.25;
+}
+
+@media (min-width: 640px) {
+  h2 {
+    font-size: 3.5rem;
+  }
 }
 
 .font-inter-w400 {
