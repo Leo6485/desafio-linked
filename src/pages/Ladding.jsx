@@ -44,7 +44,7 @@ export default function Ladding() {
                 </div>
             </Section>
             <Section id="servicos" dark={true}>
-                <div className="flex flex-col text-center justify-center h-full w-4/5 m-auto">
+                <div data-aos="fade-up" className="flex flex-col text-center justify-center h-full w-4/5 m-auto">
                     <h2>Nossos Serviços.</h2>
                     <p>Qualidades que trazem toda diferença para o paciente.</p>
                     <hr className="my-4 border-white w-1/4 m-auto"></hr>
@@ -53,7 +53,7 @@ export default function Ladding() {
             </Section>
 
             <Section id="horarios" flowers={1}>
-                <div className="flex flex-col text-center justify-center items-center p-2 h-full w-full">
+                <div data-aos="fade-up" className="flex flex-col text-center justify-center items-center p-2 h-full w-full">
                     <h2 className="text-brand">Horário de Atendimento.</h2>
                     <p className="text-brand">Estamos disponíveis para agendamento de consultas e visitas.</p>
                     <hr className="my-4 border-brand w-1/10 m-auto"></hr>
@@ -66,7 +66,7 @@ export default function Ladding() {
             </Section>
 
             <Section id="feedbacks" dark={true}>
-                <div className="flex flex-col lg:flex-row items-center justify-between h-full w-4/5 max-w-6xl mx-auto gap-10 lg:gap-16 py-8">
+                <div data-aos="fade-up" className="flex flex-col lg:flex-row items-center justify-between h-full w-4/5 max-w-6xl mx-auto gap-10 lg:gap-16 py-8">
 
                     <Feedbacks />
 
@@ -80,7 +80,7 @@ export default function Ladding() {
                 </div>
             </Section>
             <Section id="contato" flowers={1}>
-                <div className="w-full mx-auto flex flex-col gap-4 py-2 px-10 h-full justify-center">
+                <div data-aos="fade-up" className="w-full mx-auto flex flex-col gap-4 py-2 px-10 h-full justify-center">
                     <div className="grid max-w-4xl grid-cols-1 sm:grid-cols-2 gap-10 mt-10 mx-auto">
                         <Endereco></Endereco>
                         <img
@@ -88,7 +88,6 @@ export default function Ladding() {
                             className="rounded-2xl w-full object-cover shadow-sm"
                         />
                     </div>
-
                     <FormContato />
                 </div>
             </Section>
