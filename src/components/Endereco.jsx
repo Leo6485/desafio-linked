@@ -2,7 +2,7 @@ import { IoLocationOutline } from "react-icons/io5"
 
 export default function Endereco() {
     return (
-        <div className="brand-color text-white rounded-2xl p-4 sm:p-5 flex flex-col justify-center shadow-xl">
+        <div className="brand-color text-white rounded-xl p-4 sm:p-5 flex flex-col justify-center shadow-xl">
             <h3 className="text-xl sm:text-2xl font-bold mb-2">Visite-nos</h3>
             <div className="flex items-center gap-2 font-bold mb-1">
                 <IoLocationOutline className="text-xl shrink-0" />

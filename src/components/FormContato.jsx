@@ -3,7 +3,7 @@ import { FaPaperPlane } from "react-icons/fa";
 
 export default function FormContato() {
     return (
-        <div className="border border-brand rounded-2xl p-4 sm:p-5">
+        <div className="border border-brand rounded-xl p-4 sm:p-5">
             <div className="flex flex-wrap items-center gap-2 mb-3 text-brand">
                 <h3 className="text-xl font-bold">Formulário de contato</h3>
                 <span className="hidden sm:inline opacity-40">|</span>

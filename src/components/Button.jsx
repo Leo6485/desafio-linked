@@ -7,7 +7,7 @@ export default function Button({ children, icon: Icon, variant = "primary", onCl
     return (
         <button
             onClick={onClick}
-            className={`flex items-center justify-center gap-2 rounded-full text-2xl px-2 sm:px-5 py-2 ${variants[variant] ?? variants.primary}`}
+            className={`flex items-center justify-center gap-2 rounded-[25px] text-2xl px-2 sm:px-5 py-2 ${variants[variant] ?? variants.primary}`}
         >
             {Icon && <Icon className="h-4" />}
             {children}

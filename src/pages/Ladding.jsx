@@ -15,7 +15,7 @@ import Feedbacks from "../components/Feedbacks.jsx"
 import FormContato from "../components/FormContato"
 import Endereco from "../components/Endereco.jsx"
 import Footer from "../components/Footer.jsx"
-import mapa from "../assets/mapa.webp"
+import mapa from "../assets/mapa-pinned.webp"
 
 
 export default function Ladding() {
@@ -70,7 +70,7 @@ export default function Ladding() {
                     <p className="text-brand">Estamos disponíveis para agendamento de consultas e visitas.</p>
                     <hr className="my-4 border-brand w-1/10 m-auto"></hr>
                     {/* Horários card */}
-                    <div className="flex sm:border p-4 border-brand max-w-200 w-9/10 mx-auto backdrop:blur-3xl bg-white/47 rounded-2xl">
+                    <div className="flex sm:border p-4 border-brand max-w-200 w-9/10 mx-auto backdrop:blur-3xl bg-white/47 rounded-xl shadow-default">
                         <img
                             className="hidden sm:flex w-auto max-w-1/4 aspect-square mx-20"
                             src={clock}
@@ -93,7 +93,7 @@ export default function Ladding() {
                         <img
                             src={imagemAgenda}
                             alt="Anotações na prancheta durante atendimento"
-                            className="max-h-[75vh] w-auto max-w-full object-cover rounded-3xl shadow-2xl"
+                            className="max-h-[75vh] w-auto max-w-full object-cover rounded-xl"
                         />
                     </div>
                 </div>
@@ -108,7 +108,7 @@ export default function Ladding() {
 
                         <img
                             src={mapa}
-                            className="rounded-2xl w-full object-cover shadow-xl"
+                            className="rounded-xl w-full object-cover shadow-default"
                         />
                     </div>
 
