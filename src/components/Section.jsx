@@ -1,4 +1,4 @@
-import flor from "../assets/flor.png";
+import flor from "../assets/flor.webp";
 
 export default function Section({ children, dark, id, flowers = 0, className = "" }) {
     const flowers_pos = {

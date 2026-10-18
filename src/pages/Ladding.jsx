@@ -4,18 +4,18 @@ import Button from "../components/Button"
 
 import { FaTasks, FaDotCircle } from "react-icons/fa"
 import ImgFundo from "../components/ImgFundo"
-import fundo from "../assets/fundo.png"
+import fundo from "../assets/fundo.webp"
 
 import clock from "../assets/clock.svg"
 import Table from "../components/Table.jsx"
 
-import imagemAgenda from "../assets/imagem-agenda.png"
+import imagemAgenda from "../assets/imagem-agenda.webp"
 import Feedbacks from "../components/Feedbacks.jsx"
 
 import FormContato from "../components/FormContato"
 import Endereco from "../components/Endereco.jsx"
 import Footer from "../components/Footer.jsx"
-import mapa from "../assets/mapa.png"
+import mapa from "../assets/mapa.webp"
 
 
 export default function Ladding() {

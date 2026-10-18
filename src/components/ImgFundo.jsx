@@ -1,5 +1,5 @@
 import lineSvg from "../assets/line.svg";
-import fundo from "../assets/fundo.png"
+import fundo from "../assets/fundo.webp"
 
 export default function ImgFundo() {
     return (
