@@ -3,7 +3,7 @@ import fundo from "../assets/fundo.png"
 
 export default function ImgFundo() {
     return (
-        <div className={`flex justify-end relative h-full w-full overflow-hidden`}>
+        <div className={`hidden md:flex justify-end relative h-full w-full overflow-hidden`}>
             <img
                 src={fundo}
                 alt="Consultório de psicologia e psicoterapia"
@@ -13,7 +13,7 @@ export default function ImgFundo() {
                 src={lineSvg}
                 alt=""
                 aria-hidden="true"
-                className="w-0 md:w-auto absolute left-0 top-0 h-full pointer-events-none select-none origin-top-left object-cover"
+                className="absolute left-0 top-0 h-full pointer-events-none select-none origin-top-left object-cover"
             />
         </div>
     );

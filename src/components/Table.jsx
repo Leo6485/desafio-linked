@@ -8,7 +8,7 @@ export default function Table({
 }) {
     return (
         <div
-            className={`brand-color text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-center shadow-md w-full max-w-md${className}`}
+            className={`brand-color text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-center shadow-xl w-full max-w-md${className}`}
         >
             <div className="flex flex-col divide-y divide-white/20">
                 {itens.map((item, index) => (

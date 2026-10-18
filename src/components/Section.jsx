@@ -17,7 +17,7 @@ export default function Section({ children, dark, id, flowers = 0, className = "
     return (
         <section
             id={id}
-            className={`h-dvh relative flex flex-col justify-center overflow-hidden ${
+            className={`min-h-dvh md:h-dvh relative flex flex-col justify-center overflow-hidden ${
                 dark ? "brand-color text-white" : "bg-white text-black"
             } ${className}`}
         >
