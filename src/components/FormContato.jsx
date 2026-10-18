@@ -15,17 +15,17 @@ export default function FormContato() {
             <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-2.5">
                 <div className="flex items-center brand-color text-white rounded-full px-4 py-1.5 gap-2">
                     <span className="font-semibold text-sm">Nome:</span>
-                    <input type="text" className="bg-transparent w-full outline-none text-sm" />
+                    <input type="text" required={true} className="bg-transparent w-full outline-none text-sm" />
                 </div>
 
                 <div className="flex items-center brand-color text-white rounded-full px-4 py-1.5 gap-2">
                     <span className="font-semibold text-sm">Email:</span>
-                    <input type="email" className="bg-transparent w-full outline-none text-sm" />
+                    <input type="email" required={true} className="bg-transparent w-full outline-none text-sm" />
                 </div>
 
                 <div className="flex items-center brand-color text-white rounded-full px-4 py-1.5 gap-2">
                     <span className="font-semibold text-sm">Obs:</span>
-                    <input type="text" className="bg-transparent w-full outline-none text-sm" />
+                    <input type="text" required={true} className="bg-transparent w-full outline-none text-sm" />
                 </div>
 
                 <div className="flex justify-center mt-1">
