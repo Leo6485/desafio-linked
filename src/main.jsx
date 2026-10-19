@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <App/>
   }
-])
+], {basename: '/desafio-linked'})
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
