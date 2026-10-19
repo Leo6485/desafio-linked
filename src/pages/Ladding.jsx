@@ -7,7 +7,7 @@ import ImgFundo from "../components/ImgFundo"
 import fundo from "../assets/fundo.webp"
 
 import clock from "../assets/clock.svg"
-import Table from "../components/Table.jsx"
+import HorariosTable from "../components/HorariosTable.jsx"
 
 import imagemAgenda from "../assets/imagem-agenda.webp"
 import Feedbacks from "../components/Feedbacks.jsx"
@@ -77,7 +77,7 @@ export default function Ladding() {
                             >
                         </img>
 
-                        <Table/>
+                        <HorariosTable/>
 
                     </div>
                 </div>

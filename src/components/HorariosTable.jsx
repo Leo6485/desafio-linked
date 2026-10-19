@@ -1,4 +1,4 @@
-export default function Table({
+export default function HorariosTable({
     itens = [
         { label: "Segunda - Sexta", value: "08:00 - 17:00" },
         { label: "Sábado", value: "10:00 - 14:00" },
