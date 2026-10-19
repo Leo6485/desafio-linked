@@ -1,19 +1,63 @@
-# React + Vite
+### Autor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Leonardo Guimarães de Oliveira
 
-Currently, two official plugins are available:
+# Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Landing page desenvolvida para um consultório de psicologia e psicoterapia, com base em um design no Figma para o desafio técnico da Linked.
+Apresenta os serviços do consultório, horários de funcionamento, depoimentos de clientes, mapa de localização e formulário de contato para agendamentos.
 
-## React Compiler
+# Como rodar o projeto localmente
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+``` bash
+npm install
+```
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+```bash
+npm run dev
+```
 
-## Expanding the ESLint configuration
+# Tecnologias e ferramentas utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Bibliotecas e módulos
+
+- React
+- Vite
+- Tailwind CSS
+- AOS (Animate On Scroll)
+- React Icons
+
+## Ferramentas
+
+- Antigravity IDE
+
+
+# Decisões técnicas
+
+## GIT
+
+Todo o desenvolvimento foi feito na branch `main` e sem revisão, pois o escopo do projeto é pequeno e o desenvolvimento foi realizado individualmente, tornando desnecessária a adoção de certas práticas.
+
+## Ativos
+
+PNGs foram convertidos para WEBPs, reduzindo o tamanho dos arquivos e o tempo de carregamento da página.
+
+O PNG do relógio foi refeito em SVG (`assets/clock.svg`) e ajustado para a cor adequada.
+
+As curvas SVG sobrepostas à imagem da seção inicial foram unificadas em um único arquivo (`assets/line.svg`), simplificando seu uso e manipulação.
+
+## Responsividade e estilo
+
+Adicionado um menu hambúrguer para telas pequenas e médias, substituindo a navegação direta pelo header.
+
+O layout das seções inicial e de feedbacks foi ajustado para comportar as respectivas imagens mesmo em telas pequenas.
+
+AOS foi utilizado para iniciar animações durante a rolagem da página.
+
+Implementada a rolagem suave.
+
+As fontes `Inter` e `Inria Serif` foram utilizadas no desenvolvimento, conforme o modelo no Figma.
+
+## Acessibilidade
+
+Navegação por âncoras.
