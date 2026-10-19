@@ -34,12 +34,12 @@ export default function Ladding() {
 
                     <div className="max-md:bg-white/50 flex flex-col align-top md:p-10">
                         <p
-                        className="w-full max-md:p-10 max-md:text-center max-md:bg-brand max-md:text-white mb-10"
+                        className="w-full max-md:p-10 max-md:text-center max-md:bg-brand max-md:text-white mb-10 max-md:shadow-xl"
                         >
                             Consultório de psicologia e psicoterapia
                         </p>
 
-                        <div className="max-md:bg-white m-5 max-md:shadow-xl max-md:my-auto p-5 max-md:rounded-2xl gap-2">
+                        <div className="max-md:bg-white m-5 max-md:shadow-xl max-md:my-auto p-5 max-md:rounded-xl gap-2">
                             <h2 className="text-center md:text-start text-lg">Lorem Ipsum</h2>
                             <p className="text-center md:text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 p-2 gap-10 mt-5 md:mt-10">
@@ -70,9 +70,9 @@ export default function Ladding() {
                     <p className="text-brand">Estamos disponíveis para agendamento de consultas e visitas.</p>
                     <hr className="my-4 border-brand w-1/10 m-auto"></hr>
                     {/* Horários card */}
-                    <div className="flex sm:border p-4 border-brand max-w-200 w-9/10 mx-auto backdrop:blur-3xl bg-white/47 rounded-xl shadow-default">
+                    <div className="flex md:border p-4 border-brand max-w-200 w-9/10 mx-auto md:backdrop:blur-3xl md:bg-white/47 rounded-xl md:shadow-default">
                         <img
-                            className="hidden sm:flex w-auto max-w-1/4 aspect-square mx-20"
+                            className="hidden md:flex w-auto max-w-1/4 aspect-square mx-20"
                             src={clock}
                             >
                         </img>
