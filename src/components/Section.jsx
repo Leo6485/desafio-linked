@@ -1,6 +1,6 @@
 import flor from "../assets/flor.webp";
 
-export default function Section({ children, dark, id, flowers = 0, className = "" }) {
+export default function Section({ children, dark, id, flowers = 0, className = "", ...props}) {
     const flowers_pos = {
         1: [
             { className: "top-0 left-0 -translate-x-1/4 -translate-y-1/4 rotate-12" },
@@ -20,6 +20,7 @@ export default function Section({ children, dark, id, flowers = 0, className = "
             className={`min-h-dvh md:h-dvh relative flex flex-col justify-center overflow-hidden ${
                 dark ? "brand-color text-white" : "bg-white text-black"
             } ${className}`}
+            {...props}
         >
             {flowers !== 0 && (
                 <div className="absolute inset-0 w-full h-full pointer-events-none select-none z-0">

@@ -29,7 +29,7 @@ export default function Ladding() {
             <Section id="inicio">
                 <div
                     style={{ "--fundo": `url(${fundo})` }}
-                    className="text-gray-800 md:text-black flex min-h-dvh justify-between bg-(image:--fundo) md:bg-none md:bg-white bg-cover"
+                    className="text-gray-800 md:text-black flex min-h-dvh justify-between max-md:bg-(image:--fundo) bg-cover"
                 >
 
                     <div className="max-md:bg-white/50 flex flex-col align-top md:p-10">
@@ -39,7 +39,7 @@ export default function Ladding() {
                             Consultório de psicologia e psicoterapia
                         </p>
 
-                        <div className="max-md:bg-white m-5 max-md:shadow-xl p-4 max-md:rounded-2xl gap-2">
+                        <div className="max-md:bg-white m-5 max-md:shadow-xl max-md:my-auto p-5 max-md:rounded-2xl gap-2">
                             <h2 className="text-center md:text-start text-lg">Lorem Ipsum</h2>
                             <p className="text-center md:text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 p-2 gap-10 mt-5 md:mt-10">
@@ -84,8 +84,15 @@ export default function Ladding() {
             </Section>
 
 
-            <Section id="feedbacks" dark={true}>
-                <div data-aos="fade-up" className="flex flex-col lg:flex-row items-center justify-between h-full w-4/5 max-w-6xl mx-auto gap-10 lg:gap-16 py-8">
+            <Section
+                id="feedbacks"
+                style={{"--imagemAgenda": `url(${imagemAgenda})`}}
+                className="max-md:bg-(image:--imagemAgenda) bg-cover bg-no-repeat"
+                dark={true}
+                >
+                <div
+                    data-aos="fade-up"
+                    className="max-md:bg-brand/90 max-md:p-10 max-md:rounded-xl flex flex-row items-center justify-between h-full w-9/10 max-md:my-10 md:w-4/5 max-w-6xl mx-auto gap-10">
 
                     <Feedbacks />
 
@@ -93,7 +100,7 @@ export default function Ladding() {
                         <img
                             src={imagemAgenda}
                             alt="Anotações na prancheta durante atendimento"
-                            className="max-h-[75vh] w-auto max-w-full object-cover rounded-xl"
+                            className="max-md:hidden max-h-[75vh] w-auto max-w-full object-cover rounded-xl"
                         />
                     </div>
                 </div>
