@@ -12,6 +12,9 @@
     -4px 0px 4px 0px #00000040;
 }
 
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4.5rem;

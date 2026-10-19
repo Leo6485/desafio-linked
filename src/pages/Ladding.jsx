@@ -34,7 +34,7 @@ export default function Ladding() {
 
                     <div className="max-md:bg-white/50 flex flex-col align-top md:p-10">
                         <p
-                        className="w-full max-md:p-10 max-md:text-center max-md:bg-brand max-md:text-white mb-10 max-md:shadow-xl"
+                        className="w-full max-md:p-10 max-md:text-center max-md:bg-brand max-md:text-white max-md:shadow-xl"
                         >
                             Consultório de psicologia e psicoterapia
                         </p>
@@ -54,7 +54,7 @@ export default function Ladding() {
             </Section>
 
 
-            <Section id="servicos" dark={true}>
+            <Section id="servicos" className="py-10" dark={true}>
                 <div data-aos="fade-up" className="flex flex-col text-center justify-center h-full w-4/5 m-auto">
                     <h2>Nossos Serviços.</h2>
                     <p>Qualidades que trazem toda diferença para o paciente.</p>
@@ -64,7 +64,7 @@ export default function Ladding() {
             </Section>
 
 
-            <Section id="horarios" flowers={1}>
+            <Section id="horarios" className="py-10" flowers={1}>
                 <div data-aos="fade-up" className="flex flex-col text-center justify-center items-center p-2 h-full w-full">
                     <h2 className="text-brand">Horário de Atendimento.</h2>
                     <p className="text-brand">Estamos disponíveis para agendamento de consultas e visitas.</p>
@@ -87,7 +87,7 @@ export default function Ladding() {
             <Section
                 id="feedbacks"
                 style={{"--imagemAgenda": `url(${imagemAgenda})`}}
-                className="max-md:bg-(image:--imagemAgenda) bg-cover bg-no-repeat"
+                className="max-md:bg-(image:--imagemAgenda) bg-cover bg-no-repeat py-10"
                 dark={true}
                 >
                 <div

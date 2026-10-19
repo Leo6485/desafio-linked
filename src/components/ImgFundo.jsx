@@ -3,7 +3,7 @@ import fundo from "../assets/fundo.webp"
 
 export default function ImgFundo() {
     return (
-        <div className={`hidden md:flex justify-end relative h-full w-full overflow-hidden`}>
+        <div className={`hidden md:flex justify-end relative h-dvh w-full overflow-hidden`}>
             <img
                 src={fundo}
                 alt="Consultório de psicologia e psicoterapia"
